@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">4662586_4669011</string>
+    <string name="txtTitle">Car App</string>
+    <string name="btnAddCar">Add Car</string>
+    <string name="btnCheckCar">Check Car</string>
+
+    <string name="imgMain">Main Image</string>
 </resources>
