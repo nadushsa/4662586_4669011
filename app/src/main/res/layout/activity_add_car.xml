@@ -1,6 +1,131 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/light_blue">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtAddCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtAddCar"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:contentDescription="@string/imgAddCar"
+        android:id="@+id/imgAddCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddCar"
+        android:src="@drawable/bmw_m_add_car"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgAddCar"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/llBrand">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBrand"
+            android:text="@string/txtBrand"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etBrand"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:background="@color/white"
+            android:autofillHints=""
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llBrand"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtModel"
+            android:text="@string/txtModel"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etModel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:background="@color/white"
+            android:autofillHints=""
+            android:inputType="text"
+            tools:ignore="LabelFor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llModel"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPrice"
+            android:text="@string/txtPrice"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:background="@color/white"
+            android:autofillHints=""
+            android:inputType="text"
+            tools:ignore="LabelFor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llBtn"
+        android:gravity="center"
+        android:layout_below="@+id/llPrice"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAddCar"
+            android:text="@string/btnAddCar"
+            android:textSize="30sp"
+            android:backgroundTint="@color/dark_blue"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

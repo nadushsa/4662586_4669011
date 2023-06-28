@@ -1,8 +1,18 @@
 <resources>
+    //Car App
     <string name="app_name">4662586_4669011</string>
-    <string name="txtTitle">Car App</string>
-    <string name="btnAddCar">Add Car</string>
+    <string name="txtCarApp">Car App</string>
+    <string name="btnAddCarHome">Add Car</string>
     <string name="btnCheckCar">Check Car</string>
 
-    <string name="imgMain">Main Image</string>
+    <string name="imgCarApp">Car App Image</string>
+
+    //Add Car
+    <string name="txtAddCar">Add Car</string>
+    <string name="txtBrand">Brand</string>
+    <string name="txtModel">Model</string>
+    <string name="txtPrice">Price</string>
+    <string name="btnAddCar">Add Car</string>
+
+    <string name="imgAddCar">Add Car Image</string>
 </resources>

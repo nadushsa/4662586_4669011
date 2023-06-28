@@ -8,18 +8,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/txtTitle"
+        android:text="@string/txtCarApp"
         android:textAlignment="center"
         android:textSize="50sp"
         android:layout_marginBottom="20dp"/>
 
     <ImageView
-        android:contentDescription="@string/imgMain"
+        android:contentDescription="@string/imgCarApp"
         android:id="@+id/imgMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtTitle"
-        android:src="@drawable/bmw_m"
+        android:src="@drawable/bmw_m_car_app"
         android:layout_marginBottom="50dp"
         android:adjustViewBounds="true" />
 
@@ -32,7 +32,7 @@
         android:layout_marginRight="80dp"
         android:textSize="30sp"
         android:layout_marginBottom="30dp"
-        android:text="@string/btnAddCar"
+        android:text="@string/btnAddCarHome"
         android:backgroundTint="@color/dark_blue"/>
 
     <Button
