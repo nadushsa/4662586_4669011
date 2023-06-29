@@ -1,7 +1,9 @@
 package com.vu.a4662586_4669011.data;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -45,10 +47,25 @@ public class DBHelper extends SQLiteOpenHelper {
 
         long result = db.insert(TABLE_NAME, null, contentValues);
 
-        if(result == -1) {
-            return false;
-        } else {
-            return true;
+        return result != -1;
+    }
+
+    @SuppressLint("Range")
+    public int getPrice(String brand, String model) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String[] columns = {CAR_PRICE};
+        String selection = CAR_BRAND + " = ? AND " + CAR_MODEL + " = ? ";
+        String[] selectionArgs = {brand, model};
+
+        Cursor cursor = db.query(TABLE_NAME, columns, selection, selectionArgs, null, null, null);
+
+        int price = -1;
+
+        if (cursor.moveToFirst()) {
+            price = cursor.getInt(cursor.getColumnIndex(CAR_PRICE));
         }
+
+        cursor.close();
+        return price;
     }
 }
