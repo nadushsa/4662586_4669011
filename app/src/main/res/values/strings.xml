@@ -13,6 +13,19 @@
     <string name="txtModel">Model</string>
     <string name="txtPrice">Price</string>
     <string name="btnAddCar">Add Car</string>
+    <string name="cdAddCarBrand">Add car brand</string>
+    <string name="cdAddCarModel">Add car model</string>
+    <string name="cdAddCarPrice">Add car price</string>
 
     <string name="imgAddCar">Add Car Image</string>
+
+    //Check Car
+    <string name="txtCheckCar">Check Car</string>
+
+    <string name="cdEnterCarBrand">Add car brand</string>
+    <string name="cdEnterCarModel">Add car model</string>
+
+    <string name="imgCheckCar">Check Car Image</string>
+
+    <string name="btnBack">Back</string>
 </resources>

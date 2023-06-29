@@ -10,25 +10,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/txtAddCar"
+        android:text="@string/txtCheckCar"
         android:textAlignment="center"
         android:textSize="50sp"
         android:layout_marginBottom="20dp"/>
 
     <ImageView
-        android:contentDescription="@string/imgAddCar"
-        android:id="@+id/imgAddCar"
+        android:contentDescription="@string/imgCheckCar"
+        android:id="@+id/imgCheckCar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtAddCar"
-        android:src="@drawable/bmw_m_add_car"
+        android:src="@drawable/bmw_m_check_car"
         android:layout_marginBottom="50dp"
         android:adjustViewBounds="true" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgAddCar"
+        android:layout_below="@id/imgCheckCar"
         android:gravity="center"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -52,7 +52,7 @@
             android:autofillHints=""
             android:inputType="text"
             tools:ignore="LabelFor"
-            android:contentDescription="@string/cdAddCarBrand"
+            android:contentDescription="@string/cdEnterCarBrand"
             android:padding="12dp"/>
     </LinearLayout>
 
@@ -83,15 +83,32 @@
             android:autofillHints=""
             android:inputType="text"
             tools:ignore="LabelFor"
-            android:contentDescription="@string/cdAddCarModel"
+            android:contentDescription="@string/cdEnterCarModel"
             android:padding="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llBtnCheckCar"
+        android:gravity="center"
+        android:layout_below="@+id/llModel"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCheckCar"
+            android:text="@string/btnCheckCar"
+            android:textSize="30sp"
+            android:backgroundTint="@color/dark_blue"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/llModel"
+        android:layout_below="@id/llBtnCheckCar"
         android:gravity="center"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -114,32 +131,15 @@
             android:autofillHints=""
             android:inputType="text"
             tools:ignore="LabelFor"
-            android:contentDescription="@string/cdAddCarPrice"
             android:padding="12dp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/llBtnAddCar"
+        android:id="@+id/llBtnBack"
         android:gravity="center"
         android:layout_below="@+id/llPrice"
-        android:layout_marginBottom="20dp">
-
-        <Button
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/btnAddCar"
-            android:text="@string/btnAddCar"
-            android:textSize="30sp"
-            android:backgroundTint="@color/dark_blue"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_below="@+id/llBtnAddCar"
         android:layout_marginBottom="20dp">
 
         <Button
