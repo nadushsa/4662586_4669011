@@ -56,10 +56,11 @@ public class AddCarActivity extends AppCompatActivity implements View.OnClickLis
         String price = etPrice.getText().toString();
 
         boolean isInserted = databaseHelper.insertData(brand, model, Integer.parseInt(price));
-        if(isInserted) {
-            Toast.makeText(AddCarActivity.this, "Data inserted successfully", Toast.LENGTH_LONG).show();
+
+        if((brand.isEmpty() || model.isEmpty() || price.isEmpty()) && isInserted) {
+            Toast.makeText(AddCarActivity.this, "Enter values to all inputs", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(AddCarActivity.this, "Data insert failed", Toast.LENGTH_LONG).show();
+            Toast.makeText(AddCarActivity.this, "Data inserted successfully", Toast.LENGTH_LONG).show();
         }
     }
 
