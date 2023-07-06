@@ -57,9 +57,9 @@ public class AddCarActivity extends AppCompatActivity implements View.OnClickLis
 
         boolean isInserted = databaseHelper.insertData(brand, model, Integer.parseInt(price));
         if(isInserted) {
-            Toast.makeText(AddCarActivity.this, "Data inserted successfully!", Toast.LENGTH_LONG).show();
+            Toast.makeText(AddCarActivity.this, "Data inserted successfully", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(AddCarActivity.this, "Data is not inserted!", Toast.LENGTH_LONG).show();
+            Toast.makeText(AddCarActivity.this, "Data insert failed", Toast.LENGTH_LONG).show();
         }
     }
 

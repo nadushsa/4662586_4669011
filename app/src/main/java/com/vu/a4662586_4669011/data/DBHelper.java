@@ -9,8 +9,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME = "car.db";
-    public static final String TABLE_NAME = "car_table";
+    public static final String DATABASE_NAME = "garage.db";
+    public static final String TABLE_NAME = "car";
     public static final String CAR_ID = "ID";
     public static final String CAR_BRAND = "BRAND";
     public static final String CAR_MODEL = "MODEL";
